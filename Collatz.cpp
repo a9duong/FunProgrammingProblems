@@ -1,6 +1,7 @@
 #include "Collatz.h"
 #include <iostream>
 
+//Small introduction which asks user to enter a number
 void Collatz::Start()
 {
 	int n;
@@ -8,10 +9,12 @@ void Collatz::Start()
 	std::cout << "Welcome to the Collatz Program\n";
 	std::cout << "Please enter an integer number to begin: ";
 	std::cin >> n;
-	CollatzStart(n, 0);
+	CollatzFunction(n, 0);
 }
 
-int Collatz::CollatzStart(int n, int acc)
+//CollatzFunction is a recursive function which goes through the collatz algorithm
+// and returns the number of steps it took to reach 1
+int Collatz::CollatzFunction(int n, int acc)
 {
 	if (n == 1)
 	{
@@ -19,10 +22,10 @@ int Collatz::CollatzStart(int n, int acc)
 	}
 	else if (n%2 == 0)
 	{
-		return CollatzStart(n/2, acc + 1);
+		return CollatzFunction(n/2, acc + 1);
 	} 
 	else 
 	{
-		return CollatzStart(3*n + 1, acc + 1);
+		return CollatzFunction(3*n + 1, acc + 1);
 	}
 }

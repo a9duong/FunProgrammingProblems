@@ -2,7 +2,7 @@ class Collatz
 {
 public:
 	 void Start();
-	 int CollatzStart(int n, int acc);
+	 int CollatzFunction(int n, int acc);
 private:
 
 };

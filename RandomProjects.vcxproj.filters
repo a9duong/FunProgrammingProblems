@@ -18,11 +18,17 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Collatz.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="FizzBuzz.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Collatz.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
     <ClInclude Include="FizzBuzz.h">
       <Filter>Source Files</Filter>
     </ClInclude>
