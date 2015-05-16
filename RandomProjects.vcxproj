@@ -80,11 +80,13 @@
   <ItemGroup>
     <ClCompile Include="Collatz.cpp" />
     <ClCompile Include="FizzBuzz.cpp" />
+    <ClCompile Include="IsPrime.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Collatz.h" />
     <ClInclude Include="FizzBuzz.h" />
+    <ClInclude Include="IsPrime.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
